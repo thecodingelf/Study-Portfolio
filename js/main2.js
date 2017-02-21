@@ -63,6 +63,22 @@ function MouseUp(event)
 canvas.addEventListener("mousedown", MouseDown);
 canvas.addEventListener("mouseup", MouseUp);
 
+/* Handles simple game canvas */
+function startGame(){
+
+    GameArea.start();
+}
+
+var GameArea = {
+
+        canvas : document.createElement("gamecanvas"),
+        start : function() {
+        this.context = this.canvas.getContext("2d");
+        document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+    }
+
+}
+
 /* Handles getting images from flickr  */
 function showImages() {
 
