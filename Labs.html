@@ -27,7 +27,7 @@
 </div>
 <!-- End Top Bar -->
 <br>
-
+<!-- Lab exercises tab -->
 <div class="column row">
 
     <ul class="tabs" data-tabs id="example-tabs">
@@ -38,7 +38,8 @@
         <li class="tabs-title"><a href="#panel5">Lab 5</a></li>
         <li class="tabs-title"><a href="#panel6">Lab 6</a></li>
     </ul>
-
+<!-- End Lab exercises tab -->
+    <!-- Lab 1 content -->
     <div class="tabs-content" data-tabs-content="example-tabs">
         <div class="tabs-panel is-active" id="panel1">
 
@@ -103,7 +104,8 @@
                 </div>
             </div>
         </div>
-
+<!-- Lab 1 content ends -->
+        <!-- Lab 2 content -->
         <div class="tabs-panel" id="panel2">
             <div class="row medium-up-3 large-up-5">
 
@@ -166,7 +168,8 @@
                 </div>
             </div>
         </div>
-
+<!-- Lab 2 content ends -->
+        <!-- Lab 3 content -->
         <div class="tabs-panel" id="panel3">
             <div class="row medium-up-3 large-up-5">
                 <div class="col-7">
@@ -229,7 +232,8 @@
 
                 </div>
             </div>
-
+<!-- Lab 3 content ends -->
+        <!-- Lab 4 content -->
         <div class="tabs-panel" id="panel4">
             <div class="row medium-up-3 large-up-5">
                 <div class="col-7">
@@ -252,7 +256,8 @@
                 </div>
 
             </div>
-
+<!-- Lab 4 content ends -->
+        <!-- Lab 5 content -->
         <div class="tabs-panel is-active" id="panel5">
             <div class="row medium-up-3 large-up-5">
                 <div class="col-7">
@@ -278,6 +283,15 @@
 
             <h1> More jQuery </h1>
 
+             <div id="personList4">
+
+                  <label><strong>Name:</strong></label>
+
+                  <input type="text" id="newPerson4" value=""/>
+                  <button class="button" onclick="addPerson()">Add Person</button>
+                  <p id="addedPerson4"></p>
+
+             </div>
 
             <h1> Ajax </h1>
 
@@ -286,7 +300,8 @@
         </div>
         </div>
         </div>
-
+<!-- Lab 5 content ends -->'
+        <!-- Lab 6 content -->
         <div class="tabs-panel is-active" id="panel6">
             <div class="row medium-up-3 large-up-5">
                 <div class="col-7">
@@ -304,8 +319,8 @@
             </div>
     </div>
 </div>
-
-
+<!-- Lab 6 content ends -->
+<!-- Footer -->
 <div class="row column">
 
     <hr>
@@ -313,10 +328,12 @@
     <footer class="float-right">Copyright &copy; Jukka Koivu 2017</footer>
 
 </div>
-
+<!-- Footer ends -->
+<!-- Scripts for audio, video and canvas. -->
 <script src="js/audio.js"></script>
 <script src="js/video.js"></script>
 <script src="js/canvas.js"></script>
+<!-- Script for getting images from flickr -->
 <script>
 
     function showImages() {
