@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="css/foundation.min.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/main.js"></script>
-    <script src="js/chat.js"></script>
 
 </head>
 <body>
@@ -150,10 +149,13 @@
 
                 <h5> Published: 2017-01-17 </h5>
 
-                <figure><img class="images" src="images/screen1.jpg"/></figure>
+                <figure><img class="images" src="images/screen1.JPG"/></figure>
+                <div class="container"><p> Example of website on desktop. </p></div>
+
+                <figure><img class="images" src="images/screen3.JPG"/></figure>
                 <div class="container"><p> Example of website on laptop. </p></div>
 
-                <figure><img class="images" src="images/screen2.JPG" height="503" width="323"/></figure>
+                <figure><img class="images" src="images/screen5.JPG"/></figure>
                 <div class="container"><p> Example of website scaled on mobile size. </p></div>
 
                 <div id="personList2" class="container">
@@ -161,7 +163,7 @@
                     <strong>Name:</strong>
 
                     <input type="text" id="newPerson2" value=""/>
-                    <button class="button postfix" onclick="addPerson()">Add Person</button>
+                    <button class="button postfix" onclick="addPerson2()">Add Person</button>
 
                     <p id="addedPerson2"></p>
 
@@ -331,42 +333,9 @@
 
 </div>
 <!-- Footer ends -->
-<!-- Scripts for audio, video and canvas. -->
-<script src="js/audio.js"></script>
-<script src="js/video.js"></script>
-<script src="js/canvas.js"></script>
-<!-- Script for getting images from flickr -->
-<script>
 
-    function showImages() {
-
-        (function () {
-
-            var searchTag = $("#tags").val();
-            var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
-
-            $.getJSON(flickerAPI, {
-                tags: searchTag,
-                tagmode: "any",
-                format: "json"
-            })
-                .done(function (data) {
-                    $.each(data.items, function (i, item) {
-                        $("<img>").attr("src", item.media.m).appendTo("#images");
-                        if (i === 20) {
-                            return false;
-                        }
-
-                    });
-
-                });
-
-            $("#images").empty();
-
-        })();
-    }
-
-</script>
+<!-- Script for audio, video, canvas and getting images from flickr -->
+<script src="js/main2.js"></script>
 
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
