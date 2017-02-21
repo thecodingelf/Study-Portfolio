@@ -70,4 +70,3 @@ function addPerson4()
     var list = document.getElementById("newPerson4").value;
     document.getElementById("addedPerson4").innerHTML = document.getElementById("addedPerson4").innerHTML + "<br>" + list;
 }
-
