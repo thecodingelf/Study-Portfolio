@@ -43,7 +43,7 @@
 
         <h1> Ajax </h1>
 
-<button onclick="showContacts()">Show Contacts</button>
+<button onclick="persons()">Show Contacts</button>
 
         <div id="contacts"></div>
 
@@ -53,11 +53,14 @@
 
 <script>
 
-    function showContacts() {
-
-
-
+    function persons(json){
+        console.log(json);
     }
+
+    $.ajax({
+        url: "https://imp-portfolio-demonstration.herokuapp.com/json/persons.jsonp",
+        dataType: "jsonp"
+    });
 
 
 </script>

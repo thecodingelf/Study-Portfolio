@@ -85,6 +85,28 @@
 
 <script src="js/audio.js"></script>
 <script src="js/video.js"></script>
+<script>
+    if(!localStorage.getItem('newPerson')) {
+        addPerson();
+    } else {
+        setStyles();
+    }
+    function setStyles() {
+        var currentColor = localStorage.getItem('newPerson');
+
+        document.getElementById('addedPerson').value = currentColor;
+
+        htmlElem.style.backgroundColor = '#' + currentColor;
+        pElem.style.fontFamily = currentFont;
+        imgElem.setAttribute('src', currentImage);
+    }
+    function addPerson() {
+
+        localStorage.setItem('newPerson', document.getElementById('addedPerson').value);
+
+        setStyles();
+    }
+</script>
 
 </body>
 </html>
