@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>example6</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+    <script>
+        function doStuff(){
+            $.ajax{
+            dataType: "Json",
+            url: "https://imp-portfolio-demonstration.herokuapp.com/json/persons.json"
+                };
+        }
+
+        function jsonCallback() {
+            console.log('json')
+        }
+    </script>
+
+</head>
+<body>
+
+<h1 onclick="doSTuff()">Press that</h1>
+
+</body>
+</html>

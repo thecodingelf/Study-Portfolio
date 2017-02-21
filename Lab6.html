@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Lab 6</title>
+    <link href="bootstrap/css/bootstrap.css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-3 col-md-offset-3">
+
+            <input id="tags" type="search" placeholder="search for images">
+
+            <button onclick="showImages()" class="btn">Show</button>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-3">
+            <div id="images" class="img-cropped"></div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    function showImages() {
+
+        (function () {
+
+            var searchTag = $("#tags").val();
+            var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
+
+            $.getJSON(flickerAPI, {
+                tags: searchTag,
+                tagmode: "any",
+                format: "json"
+            })
+                .done(function (data) {
+                    $.each(data.items, function (i, item) {
+                        $("<img>").attr("src", item.media.m).appendTo("#images");
+                        if (i === 20) {
+                            return false;
+                        }
+
+                    });
+
+                });
+
+            $("#images").empty();
+
+        })();
+    }
+
+</script>
+
+</body>
+</html>

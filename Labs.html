@@ -1,0 +1,358 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab Works</title>
+    <link rel="stylesheet" href="css/foundation.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/main.js"></script>
+    <script src="js/chat.js"></script>
+
+</head>
+<body>
+
+<!-- Start Top Bar -->
+<div class="top-bar">
+    <div class="row">
+        <div class="top-bar-left">
+            <ul class="dropdown menu" data-dropdown-menu>
+                <li class="menu-text">Jukka Koivu</li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Labs.html">Lab Exercises</a></li>
+                <li><a href="#">About Me</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- End Top Bar -->
+<br>
+
+<div class="column row">
+
+    <ul class="tabs" data-tabs id="example-tabs">
+        <li class="tabs-title"><a href="#panel1">Lab 1</a></li>
+        <li class="tabs-title"><a href="#panel2">Lab 2</a></li>
+        <li class="tabs-title"><a href="#panel3">Lab 3</a></li>
+        <li class="tabs-title"><a href="#panel4">Lab 4</a></li>
+        <li class="tabs-title"><a href="#panel5">Lab 5</a></li>
+        <li class="tabs-title"><a href="#panel6">Lab 6</a></li>
+    </ul>
+
+    <div class="tabs-content" data-tabs-content="example-tabs">
+        <div class="tabs-panel is-active" id="panel1">
+
+            <h1> Lab 1 </h1>
+
+            <p> This lab was fairly easy and the challenging part in this lab was making
+                the list work properly. </p>
+
+            <h1> Definitions </h1>
+
+            <ul>
+
+                <li class="listStyle"><b>HTML:</b> It is basic language that can be used to build websites and web
+                    applications and it is base structure for all websites. </li>
+
+                <li class="listStyle"><b>HTML5:</b> It is current version of the HTML language which brought
+                    new features for handling multimedia and graphic content it also
+                    has new structure elements that can be used to create websites.</li>
+
+                <li class="listStyle"><b>CSS:</b> It is cascade stylesheet that is used to create visual look
+                    to the websites.</li>
+
+                <li class="listStyle"><b>HTTP:</b> It is an application protocol that is used to transfer
+                    data. </li>
+
+                <li class="listStyle"><b>Javascript:</b> It is a script language that can be used
+                    to change date automatically in website. </li>
+
+                <li class="listStyle"><b>Dynamic HTML (DHTML):</b> It is combination of languages that
+                    can be used together to create content in websites and change effects
+                    in the website.
+
+                    You can also create games with dynamic HTML but it is
+                    not commonly used method to create games.
+                </li>
+            </ul>
+
+            <h1> Coding Convention </h1>
+
+            <p> There is large ammount of different coding conventions which are helping
+                to produce high quality code and giving structure for the code. </p>
+
+            <p> I am trying to follow all the coding conventions to produce good looking
+                code and name variables according to what they are be used to keep code clean
+                and simple.</p>
+
+            <h1> Dynamic HTML </h1>
+
+            <div class="row">
+                <div class="large-12 columns">
+                    <div class="row collapse" id="personList">
+                        <div class="small-10 columns">
+                            <input type="text" id="newPerson" placeholder="Write Name">
+                        </div>
+                        <div class="small-2 columns">
+                            <button class="button postfix" onclick="addPerson()">Add Person</button>
+                        </div>
+
+                        <p id="addedPerson"></p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tabs-panel" id="panel2">
+            <div class="row medium-up-3 large-up-5">
+
+                <h1> Lab 2 </h1>
+
+                <p> This lab was fairly easy but there was some challenges with getting screenshot image fit properly. </p>
+
+            </div>
+
+            <div class="col-7">
+
+                <h1> Responsive Web Design (RWD) </h1>
+
+                <h5> Published: 2017-01-17 </h5>
+
+                <p> It offers users user friendly enviroment depending what device they are using. To create smooth and nice
+                    websites for all screen sizes and is easy to adept to new screen sizes and devices. </p>
+
+                <p> Before responsive design designers didn't take it account how websites did look on the mobile devices since
+                    they were new and it took time to start also developing the websites to mobile. </p>
+
+                <p> Difference now and then is that websites are looking smooth and designed really well to fit for all devices
+                    and offer best user interface experience to the users. </p>
+
+
+                <h1> Media Queries </h1>
+
+                <h5> Published: 2017-01-17 </h5>
+
+                <p> Media queries will help you to build responsive websites that are scaling to the different devices
+                    like mobile phones and tablets. You can also determine them in css file which causes same effect as
+                    used in html file.</p>
+
+                <h1> Why em ? </h1>
+
+                <h5> Published: 2017-01-17 </h5>
+
+                <p> Purpose of RWD: It makes websites to adapt in different devices. </p>
+
+
+                <h1> RWD Examples </h1>
+
+                <h5> Published: 2017-01-17 </h5>
+
+                <figure><img class="images" src="images/screen1.jpg"/></figure>
+                <div class="container"><p> Example of website on laptop. </p></div>
+
+                <figure><img class="images" src="images/screen2.JPG" height="503" width="323"/></figure>
+                <div class="container"><p> Example of website scaled on mobile size. </p></div>
+
+                <div id="personList2" class="container">
+
+                    <strong>Name:</strong>
+
+                    <input type="text" id="newPerson2" value=""/>
+                    <button class="button postfix" onclick="addPerson()">Add Person</button>
+
+                    <p id="addedPerson2"></p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="tabs-panel" id="panel3">
+            <div class="row medium-up-3 large-up-5">
+                <div class="col-7">
+
+                    <h1> Lab 3 </h1>
+
+                    <h1> Web Sockets </h1>
+
+                    <p> They are helping to solve problems with latency between server and client. </p>
+
+                    <p> If you want to create realtime updating social applications or multiplayer online games that are small.</p>
+
+
+                    <h1>WebSocket Chat Test</h1>
+
+                    <div id="chatbox">
+
+                        <div id="output"></div>
+
+                    </div>
+
+                    <input id="webTest" type="text" value="" placeholder="Write a Message"/><button onclick="webTest()">Send</button>
+
+
+                    <h1> Local Storage </h1>
+
+                    <div id="personList3">
+
+                        <label><strong>Name:</strong></label>
+
+                        <input type="text" id="newPerson3" value=""/>
+                        <button class="button" onclick="addPerson()">Add Person</button>
+                        <p id="addedPerson3"></p>
+
+                    </div>
+
+
+                    <h1> Audio Element </h1>
+
+                    <audio id="myAudio">
+                        <source src="http://stream.basso.fi:8000/stream" type="audio/ogg">
+                    </audio>
+
+                    <button class="button" onclick="PlayAudio()">Play</button>
+                    <button class="button" onclick="PauseAudio()">Stop</button>
+
+                    <input type="range" onchange="changeVolume()" id='volumeSlider' min=0 max=1 step=0.01 value='1'>
+
+                    <h1> Video Element </h1>
+
+                    <video id="video">
+                        <source src="videos/magictricks.mp4" type="video/mp4">
+                    </video>
+
+                    <button class="button" onclick="playVideo()">Play</button>
+                    <button class="button" onclick="pauseVideo()">Stop</button>
+
+                </div>
+
+                </div>
+            </div>
+
+        <div class="tabs-panel" id="panel4">
+            <div class="row medium-up-3 large-up-5">
+                <div class="col-7">
+
+                    <h1> Lab 4 </h1>
+
+
+                        <h1> Drawing Application </h1>
+
+                        <canvas id="canvas" width="260" height="250">  </canvas>
+
+
+                        <h1>Small Game</h1>
+
+                        <canvas id="gamecanvas" width="260" height="250">  </canvas>
+
+                    </div>
+                </div>
+
+                </div>
+
+            </div>
+
+        <div class="tabs-panel is-active" id="panel5">
+            <div class="row medium-up-3 large-up-5">
+                <div class="col-7">
+
+            <h1> Lab 5 </h1>
+
+
+            <h1> Getting familiar with jQuery </h1>
+
+            <p> With jQuery you can create plugins and animations, handle events, select dom events and also
+                develop some ajax applications. </p>
+
+            <p> It helps you to separete javascript and HTML. Also removing the cross browser problems to provide
+                better interface to work on.</p>
+
+            <p>  </p>
+
+            <p> They are content delivery networks or content distribution networks.
+
+                Benefits you get from it is that there can be reduced bandwidth costs and increasing
+                available content globally.</p>
+
+
+            <h1> More jQuery </h1>
+
+
+            <h1> Ajax </h1>
+
+
+
+        </div>
+        </div>
+        </div>
+
+        <div class="tabs-panel is-active" id="panel6">
+            <div class="row medium-up-3 large-up-5">
+                <div class="col-7">
+
+                  <h1> Lab 6 </h1>
+
+                  <input id="tags" type="search" placeholder="search for images">
+
+                  <button onclick="showImages()" class="button">Show</button>
+
+                  <div id="images" class="img-cropped"></div>
+
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+
+
+<div class="row column">
+
+    <hr>
+
+    <footer class="float-right">Copyright &copy; Jukka Koivu 2017</footer>
+
+</div>
+
+<script src="js/audio.js"></script>
+<script src="js/video.js"></script>
+<script src="js/canvas.js"></script>
+<script>
+
+    function showImages() {
+
+        (function () {
+
+            var searchTag = $("#tags").val();
+            var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
+
+            $.getJSON(flickerAPI, {
+                tags: searchTag,
+                tagmode: "any",
+                format: "json"
+            })
+                .done(function (data) {
+                    $.each(data.items, function (i, item) {
+                        $("<img>").attr("src", item.media.m).appendTo("#images");
+                        if (i === 20) {
+                            return false;
+                        }
+
+                    });
+
+                });
+
+            $("#images").empty();
+
+        })();
+    }
+
+</script>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+<script>
+    $(document).foundation();
+</script>
+
+</body>
+</html>

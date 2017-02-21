@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 3</title>
+    <link rel="stylesheet" href="css/lab3.css">
+    <script src="js/chat.js"></script>
+    <script src="js/storage.js"></script>
+
+
+
+</head>
+<body>
+
+<div class="row">
+
+    <div class="col-7">
+
+
+        <h1> Web Sockets </h1>
+
+        <p> They are helping to solve problems with latency between server and client. </p>
+
+        <p> If you want to create realtime updating social applications or multiplayer online games that are small.</p>
+
+    </div>
+
+    <div class="col-7">
+
+        <h1>WebSocket Chat Test</h1>
+
+
+        <div id="chatbox">
+            <div id="output"></div>
+
+        </div>
+        <input id="webTest" type="text" value="" placeholder="Write a Message"/><button onclick="webTest()">Send</button>
+    </div>
+
+    <div class="col-7">
+
+        <h1> Local Storage </h1>
+
+        <div id="personList">
+
+            <label><strong>Name:</strong></label>
+
+            <input type="text" id="newPerson" value=""/>
+            <button onclick="addPerson()">Add Person</button>
+            <p id="addedPerson"></p>
+
+        </div>
+    </div>
+
+    <div class="col-7">
+
+        <h1> Audio Element </h1>
+
+        <audio id="myAudio">
+            <source src="http://stream.basso.fi:8000/stream" type="audio/ogg">
+        </audio>
+
+        <button onclick="PlayAudio()">Play</button>
+        <button onclick="PauseAudio()">Stop</button>
+
+        <input type="range" onchange="changeVolume()" id='volumeSlider' min=0 max=1 step=0.01 value='1'>
+
+    </div>
+
+        <div class="col-7">
+
+        <h1> Video Element </h1>
+
+        <video id="video">
+            <source src="videos/magictricks.mp4" type="video/mp4">
+        </video>
+
+        <button onclick="playVideo()">Play</button>
+        <button onclick="pauseVideo()">Stop</button>
+
+    </div>
+</div>
+
+<script src="js/audio.js"></script>
+<script src="js/video.js"></script>
+
+</body>
+</html>
