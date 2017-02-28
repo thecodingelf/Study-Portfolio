@@ -91,20 +91,19 @@
     } else {
         setStyles();
     }
-    function setStyles() {
-        var currentColor = localStorage.getItem('newPerson');
+    function setPerson() {
+        var newperson = localStorage.getItem('newPerson');
 
-        document.getElementById('addedPerson').value = currentColor;
+        document.getElementById('addedPerson').value = newperson;
 
         htmlElem.style.backgroundColor = '#' + currentColor;
         pElem.style.fontFamily = currentFont;
-        imgElem.setAttribute('src', currentImage);
     }
     function addPerson() {
 
         localStorage.setItem('newPerson', document.getElementById('addedPerson').value);
 
-        setStyles();
+        setPerson();
     }
 </script>
 

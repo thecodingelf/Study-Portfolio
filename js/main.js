@@ -61,8 +61,7 @@ function addPerson2()
 
 function addPerson3()
 {
-    var list = document.getElementById("newPerson3").value;
-    document.getElementById("addedPerson3").innerHTML = document.getElementById("addedPerson3").innerHTML + "<br>" + list;
+    $('#personList')
 }
 
 function addPerson4()

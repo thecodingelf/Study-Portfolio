@@ -67,6 +67,10 @@ a:focus, a:hover {
     background-color: #fff;
 }
 
+.column.row.row, .row.row.columns{
+    float: inherit;
+}
+
 /* Lab correcting style */
 
 .listStyle{

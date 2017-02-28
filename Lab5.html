@@ -34,6 +34,18 @@
 
         <h1> More jQuery </h1>
 
+        <div id="personList">
+
+            <label><strong>Name:</strong></label>
+
+            <input type="text" id="newPerson" value=""/>
+
+            <button onclick="addPerson()">Add Person</button>
+
+            <p id="addedPerson"></p>
+
+        </div>
+
 
 
     </div>
@@ -43,13 +55,26 @@
 
         <h1> Ajax </h1>
 
-<button onclick="persons()">Show Contacts</button>
+<button onclick="addPersons()">Show Contacts</button>
 
         <div id="contacts"></div>
 
     </div>
 
 </div>
+<script>
+
+    function addPerson() {
+
+        var person = document.getElementById( "newPerson" );
+
+        var newElement = document.createElement( "addedPerson" );
+
+        $( person ).after( newElement );
+
+    }
+
+</script>
 
 <script>
 
@@ -59,7 +84,11 @@
 
     $.ajax({
         url: "https://imp-portfolio-demonstration.herokuapp.com/json/persons.jsonp",
-        dataType: "jsonp"
+        dataType: "jsonp",
+        data: {
+            name: json[i].name,
+            email: json[i].email
+        }
     });
 
 
