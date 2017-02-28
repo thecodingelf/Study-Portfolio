@@ -159,6 +159,25 @@ function onClick(e) {
 canvas.addEventListener("click", onClick);
 }
 
+/* Lab ajax */
+
+function contacts(){
+
+    $.ajax({
+        dataType: "jsonp",
+        url: "https://imp-portfolio-demonstration.herokuapp.com/json/persons.jsonp"
+    });
+}
+
+function jsonCallback(json)
+{
+    $.each(json, function(index, value){
+
+        $('<div />').html('name: ' + value.name + "   email:" + '<a href="mailto:' + value.email + '">' + value.email + '</a>').appendTo('#contacts');
+    });
+
+}
+
 /* Handles getting images from flickr  */
 function showImages() {
 
