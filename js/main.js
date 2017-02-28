@@ -13,10 +13,10 @@ function init()
 function testWebSocket()
 {
     websocket = new WebSocket(webChat);
-    websocket.onopen = function(evt) { onOpen(evt) };
-    websocket.onclose = function(evt) { onClose(evt) };
-    websocket.onmessage = function(evt) { onMessage(evt) };
-    websocket.onerror = function(evt) { onError(evt) };
+    websocket.onOpen = function(evt) { onOpen(evt) };
+    websocket.onClose = function(evt) { onClose(evt) };
+    websocket.onMessage = function(evt) { onMessage(evt) };
+    websocket.onError = function(evt) { onError(evt) };
 }
 
 function onOpen(evt)
@@ -59,13 +59,3 @@ function addPerson2()
     document.getElementById("addedPerson2").innerHTML = document.getElementById("addedPerson2").innerHTML + "<br>" + list;
 }
 
-function addPerson3()
-{
-    $('#personList')
-}
-
-function addPerson4()
-{
-    var list = document.getElementById("newPerson4").value;
-    document.getElementById("addedPerson4").innerHTML = document.getElementById("addedPerson4").innerHTML + "<br>" + list;
-}

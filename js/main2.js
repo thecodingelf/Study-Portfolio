@@ -159,7 +159,7 @@ function onClick(e) {
 canvas.addEventListener("click", onClick);
 }
 
-/* Lab ajax */
+/* Lab ajax*/
 
 function contacts(){
 
@@ -173,7 +173,7 @@ function jsonCallback(json)
 {
     $.each(json, function(index, value){
 
-        $('<div />').html('name: ' + value.name + "   email:" + '<a href="mailto:' + value.email + '">' + value.email + '</a>').appendTo('#contacts');
+        $('<div />').html(value.name + ' ' + '<a href="mailto:' + value.email + '">' + value.email + '</a>').appendTo('#contacts');
     });
 
 }

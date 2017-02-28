@@ -39,20 +39,7 @@
         <input id="webTest" type="text" value="" placeholder="Write a Message"/><button onclick="webTest()">Send</button>
     </div>
 
-    <div class="col-7">
 
-        <h1> Local Storage </h1>
-
-        <div id="personList">
-
-            <label><strong>Name:</strong></label>
-
-            <input type="text" id="newPerson" value=""/>
-            <button onclick="addPerson()">Add Person</button>
-            <p id="addedPerson"></p>
-
-        </div>
-    </div>
 
     <div class="col-7">
 
@@ -81,30 +68,43 @@
         <button onclick="pauseVideo()">Stop</button>
 
     </div>
+    <div class="col-7">
+
+        <h1> Local Storage </h1>
+
+        <div id="personList">
+
+            <label><strong>Name:</strong></label>
+
+            <input type="text" name="person" id="name" value=""/>
+            <button class="button" onclick="save()">Add Person</button>
+            <button class="button" onclick="load()">Load</button>
+
+            <p id="persons"></p>
+
+        </div>
+    </div>
 </div>
 
 <script src="js/audio.js"></script>
 <script src="js/video.js"></script>
 <script>
-    if(!localStorage.getItem('newPerson')) {
-        addPerson();
-    } else {
-        setStyles();
+
+    function save() {
+
+        var input = document.getElementById('name').value;
+        localStorage.setItem('person', input);
+
     }
-    function setPerson() {
-        var newperson = localStorage.getItem('newPerson');
 
-        document.getElementById('addedPerson').value = newperson;
+    function load() {
 
-        htmlElem.style.backgroundColor = '#' + currentColor;
-        pElem.style.fontFamily = currentFont;
+        document.getElementById('persons').value = localStorage.getItem('person');
+
     }
-    function addPerson() {
 
-        localStorage.setItem('newPerson', document.getElementById('addedPerson').value);
 
-        setPerson();
-    }
+
 </script>
 
 </body>

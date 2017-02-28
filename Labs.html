@@ -296,20 +296,22 @@
 
                 <h1> More jQuery </h1>
 
-                <div id="personList4">
+                <div id="Person">
 
                     <label><strong>Name:</strong></label>
 
-                    <input type="text" id="newPerson4" value=""/>
-                    <button class="button" onclick="addPerson()">Add Person</button>
-                    <p id="addedPerson4"></p>
+                    <input type="text" id="newAdd" value=""/>
+
+                    <button class="button" onclick="add()">Add Person</button>
+
+                    <div id="added"></div>
 
                 </div>
 
                 <h1> Ajax </h1>
 
-                <button onclick="contacts()">Show Contacts</button>
-
+                <button class="button" onclick="contacts()">Show Contacts</button>
+                <br>
                 <div id="contacts"></div>
 
             </div>
@@ -345,6 +347,14 @@
 </div>
 <!-- Footer ends -->
 
+<!-- Lab 5 adding person -->
+<script>
+    function add() {
+
+        $('<div />').html($('input:text').val()).appendTo('#added');
+
+    }
+</script>
 <!-- Script for audio, video, canvas and getting images from flickr -->
 <script src="js/main2.js"></script>
 

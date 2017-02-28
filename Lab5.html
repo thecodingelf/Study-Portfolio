@@ -43,7 +43,7 @@
 
             <button onclick="addPerson()">Add Person</button>
 
-            <p id="addedPerson"></p>
+            <div id="addedPerson"></div>
 
         </div>
 
@@ -67,7 +67,8 @@
 
     function addPerson() {
 
-        $('<p />').html('')
+        $('<div />').html($('input:text').val()).appendTo('#addedPerson');
+
     }
 
 </script>
